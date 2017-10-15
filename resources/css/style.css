@@ -49,3 +49,37 @@ li {
   font-weight: bold;
   line-height: 1.2;
 }
+/* icons */
+.icons {
+  display: flex;
+  height: 8rem;
+  margin: 3rem auto;
+  justify-content: center;
+
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 3rem;
+  text-align: center;
+  line-height: 1.4;
+}
+.icon-paper {
+  margin: auto;
+}
+.icon-paper img {
+  max-width: 3.5rem;
+}
+.icon-ruler {
+  margin: auto;
+}
+.icon-ruler img {
+  max-width: 5rem;
+}
+.icon-truck {
+  margin: auto;
+}
+.icon-truck img {
+  width: 5rem;
+}
