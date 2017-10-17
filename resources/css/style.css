@@ -1,3 +1,6 @@
+div {
+  border: 1px solid black;
+}
 html {
   font-size: 18px;
   font-family: Helvetica;
@@ -82,4 +85,23 @@ li {
 }
 .icon-truck img {
   width: 5rem;
+}
+/* description */
+.containers {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.container {
+  width: 35%;
+  margin-bottom: 5rem;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.container h3 {
+  width: 10rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color white;
 }
