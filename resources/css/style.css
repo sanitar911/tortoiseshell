@@ -1,6 +1,6 @@
-div {
+/*div {
   border: 1px solid black;
-}
+}*/
 html {
   font-size: 18px;
   font-family: Helvetica;
@@ -25,6 +25,7 @@ header {
   margin: auto;
   padding: 1rem 2rem;
   background-color: cadetblue;
+  color: white;
   width: 960px;
 }
 .logo {
@@ -104,4 +105,17 @@ li {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
   color white;
+}
+/* footer */
+.copyright {
+  display: flex;
+  align-items: center;
+  width: 960px;
+  margin: auto;
+  padding: 4rem;
+  background-color: azure;
+}
+.copyright img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
