@@ -26,7 +26,7 @@ header {
   padding: 1rem 2rem;
   background-color: cadetblue;
   color: white;
-  width: 960px;
+  max-width: 960px;
 }
 .logo {
   display: flex;
@@ -42,6 +42,9 @@ ul {
 li {
   padding-left: 2rem;
   list-style: none;
+}
+.navigation-512 {
+  display: none;
 }
 /* Banner */
 .banner {
@@ -104,13 +107,14 @@ li {
   background-color: cadetblue;
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
-  color white;
+  color: white;
+  font-weight: bold;
 }
 /* footer */
 .copyright {
   display: flex;
+  max-width: 960px;
   align-items: center;
-  width: 960px;
   margin: auto;
   padding: 4rem;
   background-color: azure;
@@ -118,4 +122,83 @@ li {
 .copyright img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+@media only screen and (max-width: 960px) {
+  header {
+    height: 22rem;
+  }
+  .logo-title {
+    display: none;
+  }
+  .head-container {
+    position: static;
+  }
+  .banner {
+    padding: 1rem 4rem;
+    top: 12rem;
+    margin-right: 2rem;
+  }
+  .banner h2 {
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 512px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .navigation-512 {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+  }
+  .banner {
+    position: relative;
+    padding: 1rem 0;
+    top: 9rem;
+    right: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .banner h2 {
+    font-size: 1rem;
+  }
+  .icons {
+    flex-direction: column;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    height: auto;
+  }
+  .icon {
+    margin-top: 1.54rem;
+    font-size: 0.77rem;
+  }
+  .containers {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0;
+  }
+  .container p {
+    font-size: 0.77rem;
+    width: 90%;
+    margin: auto;
+  }
+  .copyright {
+    justify-content: center;
+  }
+  .copyright span {
+    display: none;
+  }
 }
